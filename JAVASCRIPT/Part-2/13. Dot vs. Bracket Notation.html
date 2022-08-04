@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      background-color: rgb(111, 199, 111);
+      font-family: monospace;
+      color: aliceblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+    "
+  >
+    <h1>Javascript part-2</h1>
+    <script type="text/javascript">
+      "use strict";
+      let zahid = {
+        firstName: "zahid",
+        lastName: "hasan",
+        age: 2022 - 2000,
+        job: "teacher",
+        friends: ["noman", "noyon", "kamrul"],
+      };
+      console.log(zahid.firstName); //calling object with dot notation.
+      console.log(zahid["lastName"]); //calling object with bracket notation.
+
+      //test-concatenation.
+      let nameKey = "Name";
+      console.log(zahid["first" + nameKey]);
+      console.log(zahid["last" + nameKey]);
+
+      let interestedIn = prompt(
+        "what do you want to know about zahid.chose between firstName,lastName,age and friends."
+      );
+      //conditional.
+      if (zahid[interestedIn]) {
+        console.log(zahid[interestedIn]);
+      } else {
+        console.log(
+          "wrong request!chose between firstName,lastName,age and friends."
+        );
+      }
+      //adding new property to the object with dot & bracket notation.
+      zahid.location = "Bangladesh";
+      zahid["facebook"] = "Dewan Mohammod Zahid Hasan";
+      console.log(zahid);
+      //challenge
+      //zahid has 3 friends and his best friend is noman.
+      console.log(
+        `${zahid.firstName} has ${[
+          zahid.friends.length,
+        ]} friends and his best friend is ${zahid.friends[0]}`
+      );
+    </script>
+  </body>
+</html>

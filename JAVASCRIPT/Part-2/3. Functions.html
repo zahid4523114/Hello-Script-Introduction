@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Javascript part-2</h1>
+    <script>
+      "use strict";
+      function logger() {
+        console.log("this is my first function...");
+      }
+      logger();
+      //new one
+      function fruitProcessor(apples, oranges) {
+        //console.log(apples, oranges); //this are called parameters..
+        let juice = `juice with ${apples} apples and ${oranges} oranges`;
+        return juice;
+      }
+      let fruitJuice = fruitProcessor(5, 10); //this are called arguments..
+      console.log(fruitJuice);
+      let juiceWithAllFruit = fruitProcessor(2, 5);
+      console.log(juiceWithAllFruit);
+      //new function..
+      function personName(fname, lname) {
+        const bioData = `My name is ${fname}  ${lname}.I am teacher.`;
+        return bioData;
+      }
+      let dataEntry = personName("Dewan Mohammod", "Zahid Hasan");
+      console.log(dataEntry);
+    </script>
+  </body>
+</html>

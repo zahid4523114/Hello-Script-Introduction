@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      background-color: rgb(135, 214, 135);
+      font-family: monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+    "
+  >
+    <h1>Javascript part-2</h1>
+    <script type="text/javascript">
+      "use strict";
+      //without Array..
+      let friend1 = "Noman";
+      let friend2 = "Noyon";
+      let friend3 = "Kamrul";
+      //Array..Method-1.Arrays are zero(0) based..
+      let friends = ["noman", "noyon", "kamrul"];
+      console.log(friends);
+      console.log(friends[0]);
+      console.log(friends[2]);
+      console.log(friends[1]);
+      //Method-2.
+      let years = new Array(1999, 2000, 2002);
+      console.log(years);
+      //replace with new data..
+      friends[1] = "zahid";
+      console.log(friends);
+      //checking length..
+      console.log(friends.length);
+      console.log(friends[friends.length - 1]); //it can hold expression not statement..
+      //exercise.
+      let calcAge = function (birthYear) {
+        return 2022 - birthYear;
+      };
+      const calcYear = [1999, 2000, 2002];
+      let age1 = calcAge(calcYear[calcYear.length - 3]);
+      let age2 = calcAge(calcYear[calcYear.length - 2]);
+      let age3 = calcAge(calcYear[calcYear.length - 1]);
+      console.log(age1, age2, age3);
+      //exercise-2.
+      let allAges = [
+        calcAge(calcYear[0]),
+        calcAge(calcYear[1]),
+        calcAge(calcYear[2]),
+      ];
+      console.log(allAges);
+    </script>
+  </body>
+</html>

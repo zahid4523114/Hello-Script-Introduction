@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      background-color: rgb(135, 214, 135);
+      font-family: monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+    "
+  >
+    <h1>Javascript Part-2</h1>
+    <script>
+      'use strict';
+      function calcTip(bill) {
+        return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+      }
+
+      let bills = [22, 295, 176, 440, 37, 205, 30, 1100, 86, 52];
+
+      let tips = [];
+
+      let total = [];
+
+      for (let i = 0; i < bills.length; i++) {
+        let tip = calcTip(bills[i]);
+        tips.push(tip);
+        total.push(tip + bills[i]);
+      }
+      console.log(bills);
+      console.log(tips);
+      console.log(total);
+    </script>
+  </body>
+</html>

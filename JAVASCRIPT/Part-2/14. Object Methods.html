@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      background-color: rgb(135, 214, 135);
+      font-family: monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+    "
+  >
+    <h1>Javascript part-2</h1>
+    <script type="text/javascript">
+      "use strict";
+      let zahid = {
+        firstName: "zahid",
+        lastName: "hasan",
+        birthYear: 2002,
+        job: "teacher",
+        friends: ["noman", "noyon", "kamrul"],
+        learnProgramming: true,
+
+        // calcAge: function (birthYear) {
+        //   return 2022 - birthYear;
+        // },
+
+        calcAge: function () {
+          this.age = 2022 - this.birthYear;
+          return this.age;
+        },
+
+        getSummary: function () {
+          return `${
+            this.firstName
+          } is a ${this.calcAge()} years old teacher and he is ${
+            this.learnProgramming ? "learning code" : "doing teaching"
+          } for his passion.`;
+        },
+      };
+
+      console.log(zahid.calcAge()); //dot notation.
+
+      console.log(zahid.age);
+      console.log(zahid.age);
+      console.log(zahid.age);
+
+      // console.log(zahid["calcAge"](2002)); //bracket notation.
+
+      //challenge..
+
+      //Zahid is 20 years old teacher and he is learning code for his passion.
+
+      console.log(zahid.getSummary());
+    </script>
+  </body>
+</html>

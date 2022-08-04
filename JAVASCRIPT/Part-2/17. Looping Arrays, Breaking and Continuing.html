@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      background-color: rgb(135, 214, 135);
+      font-family: monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+    "
+  >
+    <h1>Javascript Part-2</h1>
+    <script>
+      'use strict';
+
+      let zahid = [
+        'Dewan Mohammod',
+        'Zahid hasan',
+        2022 - 2002,
+        'teacher',
+        ['noman', 'noyon', 'kamrul'],
+        'tangail',
+      ];
+
+      let types = [];
+
+      for (let i = 0; i < zahid.length; i++) {
+        //reading from array.
+        console.log(zahid[i], typeof zahid[i]);
+        //filling the types array..
+        // types[i] = typeof zahid[i];
+        types.push(typeof zahid[i]);
+      }
+      console.log(types);
+
+      let years = [2002, 2003, 2004, 2005];
+      let age = [];
+
+      for (let i = 0; i < years.length; i++) {
+        age.push(2022 - years[i]);
+      }
+      console.log(age);
+
+      //continue and break.
+      console.log('--STRING--');
+      for (let i = 0; i < zahid.length; i++) {
+        if (typeof zahid[i] !== 'string') continue;
+
+        console.log(zahid[i], typeof zahid[i]);
+      }
+      console.log('--NUMBER--');
+      for (let i = 0; i < zahid.length; i++) {
+        if (typeof zahid[i] === 'number') break;
+
+        console.log(zahid[i], typeof zahid[i]);
+      }
+    </script>
+  </body>
+</html>

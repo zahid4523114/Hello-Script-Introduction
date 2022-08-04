@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      /* .container {
+        background-image: url("js images/wp2465928-javascript-wallpapers.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      } */
+      .container h1 {
+        padding: 10px;
+        font-size: 30px;
+        font-family: monospace;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <h1>JAVASCRIPT PART-1</h1>
+    </section>
+    <script src="script.js">
+            //TYPE OF CONVERSION..!
+      //String to number!
+      let birthDayYear = "2002";
+      console.log(Number(birthDayYear) + 20);
+      console.log(birthDayYear + 20);
+      //number to String!
+      let birthDay = 2002;
+      console.log(String(birthDay));
+      console.log(birthDay + 20);
+
+      //TYPE OF COERCION..!
+      console.log("I am " + 20 + " years old."); // + force to string.
+      console.log("2022" - "2002"); // - force to number.
+      console.log("20" * "2"); //same as -.
+      console.log("100" / "20"); //same as -.
+
+      //Example-1
+      let n = "10" - 5;
+      n = n - 3;
+      console.log(n);
+      //Example-2
+      let m = 20 + "9";
+      m = m - 109;
+      console.log(m);
+    </script>
+  </body>
+</html>

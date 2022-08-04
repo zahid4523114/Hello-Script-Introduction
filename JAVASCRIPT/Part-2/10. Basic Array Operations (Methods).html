@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      background-color: rgb(135, 214, 135);
+      font-family: monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+    "
+  >
+    <h1>Javascript part-2</h1>
+    <script type="text/javascript">
+      "use strict";
+      //adding array last position..
+      let friends = ["Noman", "Noyon", "Kamrul"];
+      friends.push("jahid");
+      console.log(friends); //return length of the array.
+      //adding array first position..
+      friends.unshift("dewan");
+      console.log(friends);
+      //removing array from last position..
+      friends.pop();
+      console.log(friends);
+      //removing array from first position..
+      friends.shift();
+      console.log(friends);
+      //return index of array..
+      console.log(friends.indexOf("Noyon"));
+      console.log(friends.indexOf("noyon"));
+      //return boolean value.if array available in arrays block that's will be true otherwise it's false..
+      console.log(friends.includes("Kamrul"));
+      console.log(friends.includes("dewan"));
+    </script>
+  </body>
+</html>

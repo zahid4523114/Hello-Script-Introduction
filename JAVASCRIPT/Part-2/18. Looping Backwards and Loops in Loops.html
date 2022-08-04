@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      background-color: rgb(135, 214, 135);
+      font-family: monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+    "
+  >
+    <h1>Javascript Part-2</h1>
+    <script>
+      "use strict";
+      let info = ["name-zahid", "age-22", "job-teacher", "home-tangail"];
+
+      //backwards loop--
+      console.log("---BACKWARDS LOOP---");
+      for (let i = info.length - 1; i >= 0; i--) {
+        console.log(i, info[i]);
+      }
+
+      //loop in loop--
+
+      for (let i = 1; i <= 3; i++) {
+        console.log(`--CLASS-${i}--`);
+
+        for (let i = 1; i <= 10; i++) {
+          console.log(`Roll Number-${i}`);
+        }
+      }
+    </script>
+  </body>
+</html>

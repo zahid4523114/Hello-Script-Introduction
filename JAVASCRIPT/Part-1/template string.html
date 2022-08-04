@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      /* .container {
+        background-image: url("js images/wp2465928-javascript-wallpapers.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      } */
+      .container h1 {
+        padding: 10px;
+        font-size: 30px;
+        font-family: monospace;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <h1>JAVASCRIPT PART-1</h1>
+    </section>
+    <!-- JAVASCRIPT -->
+    <script src="script.js">
+              const firstName = "Dewan Mohammod";
+      const lastName = "Jahid Hasan";
+      const birthYear = 2002;
+      const pYear = 2022;
+      const job = "Teacher";
+      // javascript string method
+      const bioData =
+        firstName +
+        " " +
+        lastName +
+        " is a " +
+        job +
+        "." +
+        " He is " +
+        (pYear - birthYear) +
+        " years old. ";
+      // javascript template string method
+      const nData = `My name is ${firstName + lastName}. I'm ${
+        pYear - birthYear
+      } years old.I'm a ${job}.`;
+
+      console.log(nData);
+
+      // string without template literals!\n\ for new lines.
+      console.log("string\n\
+      multiple\n\
+      lines");
+      // string with template literals!
+      console.log(`string
+      multiple
+      lines`);
+    </script>
+  </body>
+</html>
