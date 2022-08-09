@@ -42,7 +42,7 @@ let phones = [
 ];
 
 function checkLowest(phone) {
-  let checkPhone = [];
+  let checkPhone;
   for (let i = 0; i < phone.length; i++) {
     let indexOfPhone = phone[i];
     if (indexOfPhone.price < phone[0].price) {
